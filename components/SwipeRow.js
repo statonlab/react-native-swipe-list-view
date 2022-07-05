@@ -670,7 +670,7 @@ class SwipeRow extends Component {
             },
           ]}
         >
-          {this.props.children[0] ? React.cloneElement(this.props.children[0], {
+          {this.props.children.length > 0 && this.props.children[0] ? React.cloneElement(this.props.children[0], {
             ...this.props.children[0].props,
             leftActionActivated : this.state.leftActionActivated,
             rightActionActivated: this.state.rightActionActivated,
